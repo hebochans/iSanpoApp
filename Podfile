@@ -9,4 +9,8 @@ target 'iSanpo' do
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'NVActivityIndicatorView'
+  pod 'Firebase/Auth'
+  pod 'FirebaseUI/Twitter'
+  pod 'Firebase/Core'
+  pod 'FBSDKLoginKit'
 end

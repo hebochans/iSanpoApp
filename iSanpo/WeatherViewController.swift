@@ -60,6 +60,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         setBlueGradientBackground()
     }
     
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         lat = location.coordinate.latitude
@@ -75,15 +77,15 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
                 
                 self.locationLabel.text = jsonResponse["name"].stringValue
                 self.conditionImageView.image = UIImage(named: iconName)
-                //                self.conditionLabel.text = jsonWeather["main"].stringValue
+                // self.conditionLabel.text = jsonWeather["main"].stringValue
                 self.temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
                 
                 print("http://api.openweathermap.org/data/2.5/weather?lat=\(self.lat)&lon=\(self.lon)&appid=\(self.apiKey)&units=metric")
                 
-                //                let date = Date()
-                //                let dateFormatter = DateFormatter()
-                //                dateFormatter.dateFormat = "EEEE"
-                //                self.dayLabel.text = dateFormatter.string(from: date)
+                // let date = Date()
+                // let dateFormatter = DateFormatter()
+                // dateFormatter.dateFormat = "EEEE"
+                // self.dayLabel.text = dateFormatter.string(from: date)
                 
                 let suffix = iconName.suffix(1)
                 if(suffix == "n"){
@@ -99,7 +101,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
     }
-    
+    //昼用
     func setBlueGradientBackground() {
         let topColor = UIColor(red: 95.0/255.0, green: 165.0/255.0, blue: 1.0, alpha: 1.0).cgColor
         let bottomColor = UIColor(red: 72.0/255.0, green: 114.0/255.0, blue: 184.0/255.0, alpha: 1.0).cgColor
@@ -107,7 +109,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         gradientLayer.colors = [topColor, bottomColor]
         
     }
-    
+    //夜用
     func setGreyGradientBackground() {
         let topColor = UIColor(red: 151.0/255.0, green: 151.0/255.0, blue: 151.0/255.0, alpha: 1.0).cgColor
         let bottomColor = UIColor(red: 72.0/255.0, green: 72.0/255.0, blue: 72.0/255.0, alpha: 1.0).cgColor
