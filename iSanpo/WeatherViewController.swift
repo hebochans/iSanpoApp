@@ -60,8 +60,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         setBlueGradientBackground()
     }
     
-    
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         lat = location.coordinate.latitude
@@ -93,6 +91,20 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
                 }else{
                     self.setBlueGradientBackground()
                 }
+                
+                
+                // アラートを表示する関数
+                func showAlert(message: String) {
+                    let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                    let close = UIAlertAction(title: "閉じる", style: .cancel, handler: nil)
+                    alert.addAction(close)
+                    self.present(alert, animated: true, completion: nil)
+                }
+                
+                if jsonTemp["temp"] > 1 {
+                    showAlert(message: "今さんぽに行くのは危険です!\n夜まで待ちましょう。\nと加藤が申しております。")
+                }
+                
             }
         }
         self.locationManager.stopUpdatingLocation()
@@ -101,7 +113,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
     }
-    //昼用
+    
+    //昼用グラデーションカラー
     func setBlueGradientBackground() {
         let topColor = UIColor(red: 95.0/255.0, green: 165.0/255.0, blue: 1.0, alpha: 1.0).cgColor
         let bottomColor = UIColor(red: 72.0/255.0, green: 114.0/255.0, blue: 184.0/255.0, alpha: 1.0).cgColor
@@ -109,7 +122,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         gradientLayer.colors = [topColor, bottomColor]
         
     }
-    //夜用
+    //夜用グラデーションカラー
     func setGreyGradientBackground() {
         let topColor = UIColor(red: 151.0/255.0, green: 151.0/255.0, blue: 151.0/255.0, alpha: 1.0).cgColor
         let bottomColor = UIColor(red: 72.0/255.0, green: 72.0/255.0, blue: 72.0/255.0, alpha: 1.0).cgColor
@@ -117,5 +130,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         gradientLayer.colors = [topColor, bottomColor]
         
     }
+    
 }
 

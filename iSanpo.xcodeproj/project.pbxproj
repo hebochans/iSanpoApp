@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		91540F34453291BEB4D3F884 /* Pods_iSanpo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9255B059E38B0F4FA5B300 /* Pods_iSanpo.framework */; };
 		CE2E8BF321956EE700D84577 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2E8BF221956EE700D84577 /* GoogleService-Info.plist */; };
+		CE5D89522197C17B009A5598 /* UpdateMyself [120].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89512197C17B009A5598 /* UpdateMyself [120].jpg */; };
+		CE5D89542197C194009A5598 /* UpdateMyself [180].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89532197C194009A5598 /* UpdateMyself [180].jpg */; };
+		CE5D89562197C1D4009A5598 /* UpdateMyself [20].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89552197C1D4009A5598 /* UpdateMyself [20].jpg */; };
+		CE5D89582197C230009A5598 /* UpdateMyself [29].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89572197C22F009A5598 /* UpdateMyself [29].jpg */; };
+		CE5D895A2197C28C009A5598 /* UpdateMyself [76].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89592197C28C009A5598 /* UpdateMyself [76].jpg */; };
+		CE5D895C2197C2D2009A5598 /* UpdateMyself [152].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D895B2197C2D2009A5598 /* UpdateMyself [152].jpg */; };
+		CE5D895E2197C31C009A5598 /* UpdateMyself [167].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D895D2197C31B009A5598 /* UpdateMyself [167].jpg */; };
+		CE5D89602197C35F009A5598 /* UpdateMyself [1024].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D895F2197C35F009A5598 /* UpdateMyself [1024].jpg */; };
+		CE5D89622197C380009A5598 /* UpdateMyself [40].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89612197C380009A5598 /* UpdateMyself [40].jpg */; };
+		CE5D89642197C399009A5598 /* UpdateMyself [60].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89632197C399009A5598 /* UpdateMyself [60].jpg */; };
+		CE5D89662197C3B1009A5598 /* UpdateMyself [58].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89652197C3B1009A5598 /* UpdateMyself [58].jpg */; };
+		CE5D89682197C3C7009A5598 /* UpdateMyself [87].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89672197C3C7009A5598 /* UpdateMyself [87].jpg */; };
+		CE5D896A2197C3DA009A5598 /* UpdateMyself [80].jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5D89692197C3DA009A5598 /* UpdateMyself [80].jpg */; };
+		CE5D896C2197E892009A5598 /* 矢印アイコン　左5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5D896B2197E892009A5598 /* 矢印アイコン　左5.png */; };
 		CE8A11DB2194083E0040AAB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A11DA2194083E0040AAB6 /* AppDelegate.swift */; };
 		CE8A11DD2194083E0040AAB6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A11DC2194083E0040AAB6 /* WeatherViewController.swift */; };
 		CE8A11E02194083E0040AAB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8A11DE2194083E0040AAB6 /* Main.storyboard */; };
@@ -30,6 +44,20 @@
 		6A9255B059E38B0F4FA5B300 /* Pods_iSanpo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSanpo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2A4651E07F23F77DEE2C74 /* Pods-iSanpo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSanpo.debug.xcconfig"; path = "Target Support Files/Pods-iSanpo/Pods-iSanpo.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2E8BF221956EE700D84577 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE5D89512197C17B009A5598 /* UpdateMyself [120].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [120].jpg"; sourceTree = "<group>"; };
+		CE5D89532197C194009A5598 /* UpdateMyself [180].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [180].jpg"; sourceTree = "<group>"; };
+		CE5D89552197C1D4009A5598 /* UpdateMyself [20].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [20].jpg"; sourceTree = "<group>"; };
+		CE5D89572197C22F009A5598 /* UpdateMyself [29].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [29].jpg"; sourceTree = "<group>"; };
+		CE5D89592197C28C009A5598 /* UpdateMyself [76].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [76].jpg"; sourceTree = "<group>"; };
+		CE5D895B2197C2D2009A5598 /* UpdateMyself [152].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [152].jpg"; sourceTree = "<group>"; };
+		CE5D895D2197C31B009A5598 /* UpdateMyself [167].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [167].jpg"; sourceTree = "<group>"; };
+		CE5D895F2197C35F009A5598 /* UpdateMyself [1024].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [1024].jpg"; sourceTree = "<group>"; };
+		CE5D89612197C380009A5598 /* UpdateMyself [40].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [40].jpg"; sourceTree = "<group>"; };
+		CE5D89632197C399009A5598 /* UpdateMyself [60].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [60].jpg"; sourceTree = "<group>"; };
+		CE5D89652197C3B1009A5598 /* UpdateMyself [58].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [58].jpg"; sourceTree = "<group>"; };
+		CE5D89672197C3C7009A5598 /* UpdateMyself [87].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [87].jpg"; sourceTree = "<group>"; };
+		CE5D89692197C3DA009A5598 /* UpdateMyself [80].jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UpdateMyself [80].jpg"; sourceTree = "<group>"; };
+		CE5D896B2197E892009A5598 /* 矢印アイコン　左5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矢印アイコン　左5.png"; sourceTree = "<group>"; };
 		CE8A11D72194083E0040AAB6 /* iSanpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSanpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8A11DA2194083E0040AAB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8A11DC2194083E0040AAB6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +128,7 @@
 				CE8A11DE2194083E0040AAB6 /* Main.storyboard */,
 				CE8A11E12194083F0040AAB6 /* Assets.xcassets */,
 				CE8A11E32194083F0040AAB6 /* LaunchScreen.storyboard */,
+				CE5D896B2197E892009A5598 /* 矢印アイコン　左5.png */,
 				CEF868AC2196D15A005B4B5C /* 矢印アイコン　右5.png */,
 				CEF868A22196C465005B4B5C /* 写真アイコン9.png */,
 				CEF868A32196C465005B4B5C /* カメラのアイコン素材 6.png */,
@@ -109,6 +138,19 @@
 				CE8A11FC21941FF40040AAB6 /* Let's go Digital Regular.ttf */,
 				CE2E8BF221956EE700D84577 /* GoogleService-Info.plist */,
 				CE8A11E62194083F0040AAB6 /* Info.plist */,
+				CE5D895F2197C35F009A5598 /* UpdateMyself [1024].jpg */,
+				CE5D89532197C194009A5598 /* UpdateMyself [180].jpg */,
+				CE5D895D2197C31B009A5598 /* UpdateMyself [167].jpg */,
+				CE5D895B2197C2D2009A5598 /* UpdateMyself [152].jpg */,
+				CE5D89512197C17B009A5598 /* UpdateMyself [120].jpg */,
+				CE5D89672197C3C7009A5598 /* UpdateMyself [87].jpg */,
+				CE5D89692197C3DA009A5598 /* UpdateMyself [80].jpg */,
+				CE5D89592197C28C009A5598 /* UpdateMyself [76].jpg */,
+				CE5D89632197C399009A5598 /* UpdateMyself [60].jpg */,
+				CE5D89652197C3B1009A5598 /* UpdateMyself [58].jpg */,
+				CE5D89612197C380009A5598 /* UpdateMyself [40].jpg */,
+				CE5D89572197C22F009A5598 /* UpdateMyself [29].jpg */,
+				CE5D89552197C1D4009A5598 /* UpdateMyself [20].jpg */,
 			);
 			path = iSanpo;
 			sourceTree = "<group>";
@@ -188,15 +230,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5D89602197C35F009A5598 /* UpdateMyself [1024].jpg in Resources */,
+				CE5D89682197C3C7009A5598 /* UpdateMyself [87].jpg in Resources */,
+				CE5D895C2197C2D2009A5598 /* UpdateMyself [152].jpg in Resources */,
 				CE8A11FB21941FD60040AAB6 /* wanwan.mp3 in Resources */,
 				CEF868AD2196D15A005B4B5C /* 矢印アイコン　右5.png in Resources */,
+				CE5D895A2197C28C009A5598 /* UpdateMyself [76].jpg in Resources */,
+				CE5D89562197C1D4009A5598 /* UpdateMyself [20].jpg in Resources */,
+				CE5D89522197C17B009A5598 /* UpdateMyself [120].jpg in Resources */,
+				CE5D89622197C380009A5598 /* UpdateMyself [40].jpg in Resources */,
+				CE5D896C2197E892009A5598 /* 矢印アイコン　左5.png in Resources */,
 				CE2E8BF321956EE700D84577 /* GoogleService-Info.plist in Resources */,
 				CE8A11E52194083F0040AAB6 /* LaunchScreen.storyboard in Resources */,
+				CE5D895E2197C31C009A5598 /* UpdateMyself [167].jpg in Resources */,
+				CE5D89642197C399009A5598 /* UpdateMyself [60].jpg in Resources */,
 				CEF868A42196C465005B4B5C /* 写真アイコン9.png in Resources */,
 				CE8A11E22194083F0040AAB6 /* Assets.xcassets in Resources */,
 				CE8A11FD21941FF40040AAB6 /* Let's go Digital Regular.ttf in Resources */,
+				CE5D896A2197C3DA009A5598 /* UpdateMyself [80].jpg in Resources */,
 				CEF868A52196C465005B4B5C /* カメラのアイコン素材 6.png in Resources */,
+				CE5D89662197C3B1009A5598 /* UpdateMyself [58].jpg in Resources */,
+				CE5D89582197C230009A5598 /* UpdateMyself [29].jpg in Resources */,
 				CE8A11FA21941FD60040AAB6 /* forStopwatch.JPG in Resources */,
+				CE5D89542197C194009A5598 /* UpdateMyself [180].jpg in Resources */,
 				CE8A11E02194083E0040AAB6 /* Main.storyboard in Resources */,
 				CE8A11F921941FD60040AAB6 /* forPedometer.JPG in Resources */,
 			);

@@ -24,7 +24,7 @@ class PedometerViewController: UIViewController,UIImagePickerControllerDelegate,
         super.viewDidLoad()
         
         print(myData)
-        label.text = "\(durationStr)\n\(myData.numberOfSteps) STEPS\n\(round(Double(truncating: myData.distance!))) M"
+        label.text = "\(durationStr)\n\(myData.numberOfSteps) STEPS\n\(round(Double(truncating: myData.distance!))) FEET"
 
         // ラベルに枠を表示させるため
         self.label.layer.borderColor = UIColor(red: 63/255.0, green: 243/255.0, blue: 54/255.0, alpha: 1.0).cgColor
@@ -90,11 +90,23 @@ class PedometerViewController: UIViewController,UIImagePickerControllerDelegate,
     }
     
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)//戻る時の処理
+    }
+    
+    
     @IBAction func shareButton(_ sender: Any) {
+        
+        //写真をシェア
+        if let sharedImage = imageView.image {
+            let sharedItems = [sharedImage]
+            let controller = UIActivityViewController(activityItems: sharedItems, applicationActivities: nil)
+            present(controller, animated: true,completion: nil)
+        }
+        
         // 共有する項目l
         let shareText = "今日のさんぽ行ってきたよ~"
 //        let shareWebsite = NSURL(string: "https://hebochans.github.io/")!
-        
         
         let activityItems = [shareText] as [Any]
         
@@ -114,6 +126,7 @@ class PedometerViewController: UIViewController,UIImagePickerControllerDelegate,
         
         // UIActivityViewControllerを表示
         self.present(activityVC, animated: true, completion: nil)
+        
     }
     
     override func didReceiveMemoryWarning() {

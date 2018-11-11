@@ -18,6 +18,10 @@ class StopwatchViewController: UIViewController {
     var pedometer = CMPedometer()
     var myData:CMPedometerData!
     var durationStr = ""
+    
+    // backgroundTaskIDの初期値はなんでも良さそうです。とりあえず0を代入しておきます。
+    var backgroundTaskID : UIBackgroundTaskIdentifier = UIBackgroundTaskIdentifier(rawValue: 0)
+    
     // アプリで使用する音の準備
     func setupSound() {
         // ボタンを押した時の音の設定。
@@ -50,7 +54,16 @@ class StopwatchViewController: UIViewController {
 
     @IBOutlet weak var timeDisplay: UILabel!
     
+    
+    func longTimeFunction() {
+        // 長い時間かかる処理
+        // 処理が終わったらコレを書く
+        UIApplication.shared.endBackgroundTask(self.backgroundTaskID)
+    }
+    
     @IBAction func startButton(_ sender: UIButton) {
+        
+        
         // ストップウォッチをスタート
         if timerRunning == false{
             timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(StopwatchViewController.updateDisplay), userInfo: nil, repeats: true)
@@ -63,7 +76,13 @@ class StopwatchViewController: UIViewController {
             // 計測開始
             startPedometer()
             }
+            // ボタンが押されたら時間のかかる処理をする。
+            // 処理中にユーザがアプリを閉じても大丈夫なようにしたい。
+            // 中断されたら困る処理の起点にコレを書く
+            self.backgroundTaskID = UIApplication.shared.beginBackgroundTask(expirationHandler: nil)
+            self.longTimeFunction()
         }
+        
     }
     
     @IBAction func stopButton(_ sender: UIButton) {
